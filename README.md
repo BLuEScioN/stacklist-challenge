@@ -5,5 +5,3 @@ This is a repository for the boiler plate for a react app. With this repo, you o
 # How to run locally
 
 Run "npm run dev-build" to build development build and "npm run dev-server" to run code locally at localhost:8080
-
-# dont push this
