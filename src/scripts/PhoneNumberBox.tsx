@@ -50,16 +50,16 @@ export class PhoneSearchBox extends React.Component<
     this.setState({ input });
   }
 
-  private isDigit(input: string) {
-    if (input.match(/\d+/)) {
-      // Only digits are allowed in the input
-      return true;
-    } else if (input.match(/^$/)) {
-      // Empty strings must to allow the user to delete all their input
-      return true;
-    }
-    return false;
-  }
+  // private isDigit(input: string) {
+  //   if (input.match(/\d+/)) {
+  //     // Only digits are allowed in the input
+  //     return true;
+  //   } else if (input.match(/^$/)) {
+  //     // Empty strings must to allow the user to delete all their input
+  //     return true;
+  //   }
+  //   return false;
+  // }
 
   private formatPhoneNumber(input: string): string {
     const originalInput = input;
@@ -67,7 +67,7 @@ export class PhoneSearchBox extends React.Component<
     const areaCode = originalInput.slice(0, 3);
     const number = originalInput.slice(3);
 
-    if (originalInput.length > 1 && originalInput.length < 4) {
+    if (originalInput.length > 0 && originalInput.length < 4) {
       formattedInput = '(' + areaCode;
     } else if (originalInput.length > 3 && originalInput.length <= 6) {
       formattedInput = '(' + areaCode + ')' + ' ' + number;
