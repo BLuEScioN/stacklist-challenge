@@ -13,8 +13,53 @@ html {
 
 body {
     font-family: Arial, Geneva, sans-serif;
+    margin: 0;
 }
 
-.main {
-    padding: 50px 25px;
+html, body {
+  height: 100%;
+}
+
+#app {
+  height: 100%;
+ 
+
+  .main {
+    height: 100%;
+      // padding: 50px 25px;
+      .main-content {
+        padding: 15px 15px;
+        background-color: orange;
+        display: flex;
+        height: 100%;
+  
+        .left-pane {
+          float: left;
+          // display: inline-block;
+          background-color: green;
+          height: 100%;
+          margin-right: 30px;
+          width: 25%;
+
+          .product {
+
+            .image {
+              height: 50px;
+              width: 50px;
+            }
+            .title {
+              
+            }
+          }
+        } 
+  
+        .right-pane {
+          float: right;
+          // display: inline-block;
+          background-color: firebrick;
+          height: 100%;
+          // width: auto;
+        }
+      }
+  }
 }

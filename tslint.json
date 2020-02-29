@@ -5,6 +5,8 @@
     "object-literal-sort-keys": false,
     "interface-name": true,
     "member-ordering": false,
-    "no-console": false
+    "no-console": false,
+    "no-empty": false,
+    "jsx-self-close": false
   }
 }

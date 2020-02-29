@@ -68,7 +68,14 @@ module.exports = env => {
             name: isDevelopment ? '[path][name].[ext]' : '[hash].[ext]',
             publicPath: 'assets'
           }
-        }
+        },
+        // {
+        //   test: /\.(png|jpe?g|gif|jp2|webp)$/,
+        //   loader: 'file-loader',
+        //   options: {
+        //     name: 'images/[name].[ext]'
+        //   }
+        // }
         // {
         // 	test: /\.(png|svg|jpeg|gif)$/,
         // 	use: [
